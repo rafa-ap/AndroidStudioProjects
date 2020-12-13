@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boton"
+                android:text="Haz clic Aqui"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"/>
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:textOn="Encendido"
+                android:textOff="Apagado"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:src="@drawable/stop_30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textoplano"
+        android:text="Texto plano"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/textoSerif"
+        android:text="Fuente Serif"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:fontFamily="serif"/>
+    <TextView
+        android:id="@+id/textoNegrita"
+        android:text="Negrita"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textoCrusivaRojo"
+        android:text="Cursiva"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:textColor="@color/Red"/>
+    <ImageView
+        android:id="@+id/imageMotorBike"
+        android:src="@drawable/scooter_125px"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkAndroid"
+                android:text="Android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/checkIPhone"
+                android:text="iPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:text="Opción 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:text="Opción 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/botonConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75sp"
+            android:layout_marginTop="30sp"
+            android:text="Confirmar Selección" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

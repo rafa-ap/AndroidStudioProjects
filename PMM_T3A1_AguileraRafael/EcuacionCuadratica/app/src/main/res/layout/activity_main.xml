@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="30sp"
+    >
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Calculadora de ecuaciones cuadraticas"
+
+        />
+
+    <ImageView
+        android:id="@+id/ecuacionygrafica"
+        android:src="@drawable/ecuacionygrafica"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/titulo"
+        />
+
+    <TextView
+        android:id="@+id/aTV"
+        android:text="Introduce variable a: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ecuacionygrafica"
+        android:layout_marginTop="20sp"
+        />
+    <EditText
+        android:id="@+id/aET"
+        android:text="1"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/aTV"
+        android:layout_toRightOf="@+id/aTV"
+        />
+
+    <TextView
+        android:id="@+id/bTV"
+        android:text="Introduce variable b: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aTV"
+        android:layout_marginTop="20sp"
+        />
+    <EditText
+        android:id="@+id/bET"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bTV"
+        android:layout_toRightOf="@+id/bTV"
+        android:text="3"
+        />
+
+    <TextView
+        android:id="@+id/cTV"
+        android:text="Introduce variable c: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bTV"
+        android:layout_marginTop="20sp"
+        />
+    <EditText
+        android:id="@+id/cET"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cTV"
+        android:layout_toRightOf="@+id/cTV"
+        android:text="2"
+        />
+    <ImageView
+        android:id="@+id/formula"
+        android:src="@drawable/formula"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_below="@+id/cTV"
+        android:layout_marginTop="20sp"
+
+        />
+    <Button
+        android:id="@+id/btnCalcula"
+        android:text="Pulsa para calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_below="@+id/formula"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClikCalcula"
+        />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalcula"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

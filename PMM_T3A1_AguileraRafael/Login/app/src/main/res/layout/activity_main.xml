@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:textSize="25sp"
+        android:text="Login"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:text="Moto Shared"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:textColor="@color/verdeClaro"
+
+        />
+    <ImageView
+        android:src="@drawable/scooter_125px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60sp"
+        />
+    <EditText
+        android:id="@+id/user"
+        android:hint="Enter name"
+        android:textColorHint="@color/rosa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:hint="Password"
+        android:textColorHint="@color/rosa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/intentos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intentos: "
+            android:textSize="20sp"
+            android:paddingRight="40sp"
+
+            />
+
+        <TextView
+            android:id="@+id/logueado"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:text="Logueado: "
+            android:textSize="20sp"
+            android:paddingRight="40sp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="30sp"
+            android:text="LOGIN"
+            android:backgroundTint="@color/gris"
+            android:textColor="@color/black"
+            android:onClick="onClickBtnLogin"
+            />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30sp"
+            android:text="CANCEL"
+            android:backgroundTint="@color/gris"
+            android:textColor="@color/black"
+            android:onClick="onClickBtnCacel"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="30sp">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor de temperauras"
+        android:fontFamily="@font/lobster_two_bold"
+        android:layout_margin="30sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="@color/verdeClaro"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/escalaInicialLY"
+        android:layout_below="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20sp"
+        >
+
+        <TextView
+            android:text="Escala Inicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            />
+
+        <RadioGroup
+            android:id="@+id/iniRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/iniC"
+                android:text="Celsius (ºC)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/iniF"
+                android:text="Fahrenheit (ºF)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/iniK"
+                android:text="Kelvin (K)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/tempInicialET"
+            android:hint="Escribe..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/titulo"
+        android:layout_toRightOf="@+id/escalaInicialLY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20sp">
+
+        <TextView
+            android:text="Escala final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            />
+
+        <RadioGroup
+            android:id="@+id/finRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/finC"
+                android:text="Celsius (ºC)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/finF"
+                android:text="Fahrenheit (ºF)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/finK"
+                android:text="Kelvin (K)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/tempFinalET"
+            android:hint="Escribe..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/termometros"
+        android:src="@drawable/termometros"
+        android:layout_below="@+id/escalaInicialLY"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+
+        />
+
+    <TextView
+        android:text="(Pulsa la imagen para convertir)"
+        android:layout_below="@+id/termometros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
