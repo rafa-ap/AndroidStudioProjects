@@ -31,6 +31,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return tecniLedDB;
     }
 
+<<<<<<< HEAD
+=======
+    //test change
+
+>>>>>>> c917c6c (Test 3?)
     public static void recargaDatos() {
         listaProyectos = new ArrayList<Proyecto>();
         Cursor consulta1 = tecniLedDB.query("Proyecto", null, null, null, null, null, null);
